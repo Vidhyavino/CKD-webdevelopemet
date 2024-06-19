@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+{% load static %}
+<div class="jumbotron">
+    <h1>Chronic Kidney Disease </h1>
+    <div class="fieldWrapper">
+      <h2>For the values</h2>
+      <p>age:{{data_a}}</p>
+      <p>sex:{{data_s}}</p>
+      <p>bmi:{{data_b}}</p>
+      <p>children:{{data_ch}}</p>
+      <p>smoker:{{data_sm}}</p>
+      <p>Predicted Insurance Charge: {{output}}</p>
+      <br>
+      <!-- Include your regression-specific output handling here -->
+    </div>
+</div>
+{% endblock %}
+   
